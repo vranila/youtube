@@ -24,10 +24,12 @@
             </div>
         </div>
         <div class="search-container">
-            <form actions="">
-                <input type="text" placeholder="Search">
-            </form>
-            <button class="search"><i class="ri-search-line"></i></button>
+            <div class="search-container-searchicon">
+                <form actions="">
+                    <input type="text" placeholder="Search">
+                </form>
+                <button class="search"><i class="ri-search-line"></i></button>
+            </div>
             <button class="mic"><i class="ri-mic-line"></i></button>
         </div>
         <div class="profile-container">
@@ -35,7 +37,10 @@
                     <i class="ri-add-large-fill"></i>
                     <p class="create-text">Create</p>
                 </div>                
-                <i class="ri-notification-4-line"></i>
+                <div class="notification-wrapper">
+                    <i class="ri-notification-3-line"></i>
+                    <span class="notification-badge">9+</span>
+                </div>
                 <div class="profile-box">
                     <img src="./img/profilephoto.png" alt="profile">
                 </div>
@@ -43,96 +48,114 @@
     </div>
     <div class="body-container">
         <div class="sidebar">
-            <div class="sidebar-items">
-                <a href="" class="sidebar-item"><i class="ri-home-5-line"></i> Home</a>
-                <a href="" class="sidebar-item"><i class="ri-wireless-charging-line"></i>Shorts </a>
-                <!-- <a href="" class="sidebar-item"><i class="ri-video-line"></i>Subscription </a> -->
-                <hr>
-                <h4 class="more">Subscriptions <i class="ri-arrow-right-s-line"></i></h4>
-                <a href="" class="sidebar-item"><i class="ri-keyboard-box-line"></i> Gaming</a>
-                <a href="" class="sidebar-item"><i class="ri-live-line"></i>Live</a>
-                <a href="" class="sidebar-item"><i class="ri-award-line"></i>Sports </a>
-                <hr>
-                <h4 class="more">You <i class="ri-arrow-right-s-line"></i></h4>
-                <a href="" class="sidebar-item"><i class="ri-chat-history-line"></i>History</a>
-                <a href="" class="sidebar-item"><i class="ri-play-list-2-line"></i>Playlists </a>
-                <a href="" class="sidebar-item"><i class="ri-video-line"></i>Your Videos </a>
-                <a href="" class="sidebar-item"><i class="ri-time-line"></i>Watch Later </a>
-                <a href="" class="sidebar-item"><i class="ri-thumb-up-line"></i>Liked Videos </a>
-                <a href="" class="sidebar-item"><i class="ri-arrow-down-line"></i>Downloads </a>
-                <hr>
-                <h4 class="more">Explore <i class="ri-arrow-right-s-line"></i></h4>
-                <a href="" class="sidebar-item"><i class="ri-shopping-bag-4-line"></i>Shopping</a>
-                <a href="" class="sidebar-item"><i class="ri-music-line"></i>Music </a>
-                <a href="" class="sidebar-item"><i class="ri-clapperboard-line"></i>Movies </a>
-                <a href="" class="sidebar-item"><i class="ri-arrow-down-s-line"></i>Show More </a>
-                <hr>
-                <h4 class="more">More from YouTube</h4>
-                <a href="" class="sidebar-item"><i class="fa-brands fa-youtube"></i>YouTube Premium</a>
-                <a href="" class="sidebar-item"><i class="ri-music-line"></i>YouTube Studio</a>
-                <a href="" class="sidebar-item"><i class="ri-clapperboard-line"></i>YouTube Music</a>
-                <a href="" class="sidebar-item"><i class="ri-arrow-down-s-line"></i>YouTube Kids</a>
-                <hr>
-                <a href="" class="sidebar-item"><i class="ri-settings-5-line"></i> Settings</a>
-                <a href="" class="sidebar-item"><i class="ri-flag-line"></i>Report History</a>
-                <a href="" class="sidebar-item"><i class="ri-question-line"></i>Help </a>
-                <a href="" class="sidebar-item"><i class="ri-feedback-line"></i>Send Feedback </a>
-                <hr>
-                <h4 class="more">Copyright</h4>
-                
-                    AboutPressCopyrightContact usCreatorsAdvertiseDevelopers
-TermsPrivacyPolicy & SafetyHow YouTube worksTest 
-                <hr>
-            </div>
+                <div class="sidebar-items">
+                    <a href="" class="sidebar-item"><i class="ri-home-5-line"></i> Home</a>
+                    <a href="" class="sidebar-item"><i class="ri-wireless-charging-line"></i>Shorts </a>
+                    <!-- <a href="" class="sidebar-item"><i class="ri-video-line"></i>Subscription </a> -->
+                    <hr>
+                    <h4 class="more">Subscriptions <i class="ri-arrow-right-s-line"></i></h4>
+                    <a href="" class="sidebar-item"><i class="ri-keyboard-box-line"></i> Gaming</a>
+                    <a href="" class="sidebar-item"><i class="ri-live-line"></i>Live</a>
+                    <a href="" class="sidebar-item"><i class="ri-award-line"></i>Sports </a>
+                    <hr>
+                    <h4 class="more">You <i class="ri-arrow-right-s-line"></i></h4>
+                    <a href="" class="sidebar-item"><i class="ri-chat-history-line"></i>History</a>
+                    <a href="" class="sidebar-item"><i class="ri-play-list-2-line"></i>Playlists </a>
+                    <a href="" class="sidebar-item"><i class="ri-video-line"></i>Your Videos </a>
+                    <a href="" class="sidebar-item"><i class="ri-time-line"></i>Watch Later </a>
+                    <a href="" class="sidebar-item"><i class="ri-thumb-up-line"></i>Liked Videos </a>
+                    <a href="" class="sidebar-item"><i class="ri-arrow-down-line"></i>Downloads </a>
+                    <hr>
+                    <h4 class="more">Explore <i class="ri-arrow-right-s-line"></i></h4>
+                    <a href="" class="sidebar-item"><i class="ri-shopping-bag-4-line"></i>Shopping</a>
+                    <a href="" class="sidebar-item"><i class="ri-music-line"></i>Music </a>
+                    <a href="" class="sidebar-item"><i class="ri-clapperboard-line"></i>Movies </a>
+                    <a href="" class="sidebar-item"><i class="ri-arrow-down-s-line"></i>Show More </a>
+                    <hr>
+                    <h4 class="more">More from YouTube</h4>
+                    <a href="" class="sidebar-item"><i class="ri-youtube-line"></i>YouTube Premium</a>
+                    <a href="" class="sidebar-item"><i class="ri-folder-video-line"></i>YouTube Studio</a>
+                    <a href="" class="sidebar-item"><i class="ri-music-line"></i>YouTube Music</a>
+                    <a href="" class="sidebar-item"><i class="ri-home-9-line"></i>YouTube Kids</a>
+                    <hr>
+                    <a href="" class="sidebar-item"><i class="ri-settings-5-line"></i> Settings</a>
+                    <a href="" class="sidebar-item"><i class="ri-flag-line"></i>Report History</a>
+                    <a href="" class="sidebar-item"><i class="ri-question-line"></i>Help </a>
+                    <a href="" class="sidebar-item"><i class="ri-feedback-line"></i>Send Feedback </a>
+                    <hr>
+                    <h4 class="more">Copyright</h4>
+                    <footer class="yt-footer">
+                        <div class="footer-links">
+                            <a href="#">About</a>
+                            <a href="#">Press</a>
+                            <a href="#">Copyright</a>
+                            <a href="#">Contact us</a>
+                            <a href="#">Creators</a>
+                            <a href="#">Advertise</a>
+                            <a href="#">Developers</a>
+                        </div>
+                        <div class="footer-links">
+                            <a href="#">Terms</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Policy & Safety</a>
+                            <a href="#">How YouTube works</a>
+                            <a href="#">Test new features</a>
+                        </div>
+                        <p class="copy">© 2025 Google LLC</p>
+                    </footer>
+                </div>
         </div>
         <div class="content">
-            <div class="chips-wrapper">
-                <div class="chip">
-                    <p>All</p>
-                </div>
-                <div class="chip">
-                    <p>HTML</p>
-                </div>
-                <div class="chip">
-                    <p>CSS</p>
-                </div>
-                <div class="chip">
-                    <p>Responsive Design</p>
-                </div>
-                <div class="chip">
-                    <p>Figma</p>
-                </div>
-                <div class="chip">
-                    <p>React</p>
-                </div>
-                <div class="chip">
-                    <p>Java</p>
-                </div>
-                <div class="chip">
-                    <p>UI/IX</p>
-                </div>
-                <div class="chip">
-                    <p>Spring Boot</p>
-                </div>
-                <div class="chip">
-                    <p>Data Structure</p>
-                </div>
-                <div class="chip">
-                    <p>Operating System</p>
-                </div>
-                 <div class="chip">
-                    <p>JS</p>
-                </div>
-                <div class="chip">
-                    <p>Type Script</p>
-                </div>
-                <div class="chip">
-                    <p>Front End Development</p>
-                </div>
-                <div class="chip">
-                    <p>Back End Development</p>
+            <div class="filter-bar">
+                <div class="chips-wrapper">
+                    <div class="chip">
+                        <p>All</p>
+                    </div>
+                    <div class="chip">
+                        <p>HTML</p>
+                    </div>
+                    <div class="chip">
+                        <p>CSS</p>
+                    </div>
+                    <div class="chip">
+                        <p>Responsive Design</p>
+                    </div>
+                    <div class="chip">
+                        <p>Figma</p>
+                    </div>
+                    <div class="chip">
+                        <p>React</p>
+                    </div>
+                    <div class="chip">
+                        <p>Java</p>
+                    </div>
+                    <div class="chip">
+                        <p>UI/IX</p>
+                    </div>
+                    <div class="chip">
+                        <p>Spring Boot</p>
+                    </div>
+                    <div class="chip">
+                        <p>Data Structure</p>
+                    </div>
+                    <div class="chip">
+                        <p>Operating System</p>
+                    </div>
+                    <div class="chip">
+                        <p>JS</p>
+                    </div>
+                    <div class="chip">
+                        <p>Type Script</p>
+                    </div>
+                    <div class="chip">
+                        <p>Front End Development</p>
+                    </div>
+                    <div class="arrow-icon">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
                 </div>
             </div>
+           
             <div class="video-container">
                 <div class="video-content-cover">
                     <div class="video-content">

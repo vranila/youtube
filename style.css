@@ -13,13 +13,14 @@ h1{
 h4{
     font-size: 0.9rem;
     /* text-transform: uppercase; */
-    color: #ffffff;
+    /* color: #ffffff; */
+     color: black;
     margin-left: 20px;
 }
 
 i{
     font-size:1.5rem;
-    color: #fff;
+    color: #000000;
 }
 
 p,a{
@@ -27,7 +28,7 @@ p,a{
 }
 
 hr{
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 0.8px solid rgba(2, 1, 1, 0.1);
     margin:12px 0;
 
 }
@@ -63,7 +64,9 @@ hr{
     top: 0;
     left: 0;
     width:100% ;
-    background-color: black;
+    /* background-color: black; */
+    background-color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,7 +103,8 @@ img{
 
 #logo-text{
     letter-spacing: -2px;
-    color: white;
+    /* color: white; */
+    color: black;
 }
 
 .logo{
@@ -115,10 +119,21 @@ img{
 }
 
 .search-container{
-     display: flex;
+    display: flex;
     align-items: center;
     flex:0 1 685px ;
     margin-left:40px ;
+}
+
+.search-container-searchicon{
+    display: flex;
+    align-items: center;
+    flex:0 1 685px ;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    height: 40px;       
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .search-container form{
@@ -131,11 +146,11 @@ img{
     height: 40px;
     width: 100%;
     align-items: center;
-    background-color:#121212 ;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: white;
+    color: black;
     padding: 12px;
-    color: white;
     font-size: 1rem;
+    border: none;
 }
 
 .search{
@@ -147,7 +162,9 @@ img{
     z-index: 20;
     border: none;
     outline: none;
-    background-color: #313131;
+    /* background-color: #313131; */
+    background-color: #f8f8f8;
+    color: black;
     cursor: pointer;
 
 }
@@ -162,7 +179,9 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #181818;
+    /* background-color: #181818; */
+    background-color: #f8f8f8;
+    color: black;
     cursor: pointer;
 }
 
@@ -171,6 +190,10 @@ img{
     width: 33px;
     height: 33px;
     cursor: pointer;
+}
+
+.menu i{
+     color: black;
 }
 
 .profile-box{
@@ -182,23 +205,54 @@ img{
     cursor: pointer;
 }
 
+.profile-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
 .profile-container{
     display: flex;
     align-items: center;
 }
 
-.profile-container i{
-    margin-left: 7%;
+.profile-container i{ 
+    color: black;
+}
+
+.notification-wrapper {
+    position: relative;
+    display: inline-block;
     cursor: pointer;
+    margin-left: 7%;
     margin-right: 7%;
 }
 
+.notification-badge {
+    position: absolute;
+    top: -6px;  
+    right: -10px; 
+    background-color: #cc0000; 
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 10px; 
+    border: 2px solid white; 
+    line-height: 1; 
+    min-width: 15px;
+    text-align: center;
+}
+
 .create-button{
-    background-color: #373737;
+    /* background-color: #373737;
+    color: #fff; */
+    background-color: #f8f8f8;
+    color: black;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 36px;
     cursor: pointer;
-    color: #fff;
     width: 110px;
     height: 40px; 
     display: flex;
@@ -211,10 +265,12 @@ img{
     margin-left: 10%;
     padding-top: 7px;
     font-size: 21px;
+    color: black;
 }
 
 .create-text{
-    color: white;
+    /* color: white; */
+    color: black;
     text-align: center;
     padding-top: 9px;
     
@@ -229,16 +285,24 @@ img{
     height: calc(100vh - 60px);
 }
 
+
 .sidebar{
-    background-color: black;
+    /* background-color: black;
+     color: white; */
+    background-color: white;
+    color: black;
     padding-top: 10px;
     width: 240px;
-    overflow-y: scroll;
-    color: white;
+    height: calc(100vh - 80px);
+    /* overflow-y: auto; */
+    overflow-y: overlay;
+    position: relative;
+   
 }
 
 .sidebar a{
-     color: white;
+     /* color: white; */
+     color: black;
      text-decoration: none;
 }
 
@@ -256,20 +320,53 @@ img{
 }
 
 .sidebar-item:hover{
-    background-color: #4c4c4c;
+    /* background-color: #4c4c4c; */
+    background-color: #f8f8f8;
+    color: black;
 }
 
 .sidebar-item i{
    margin-right: 24px;
    cursor: pointer;
+    color: black;
 }
 
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
 .more i{
-   color: rgba(255, 255, 255, 0.9); 
+   /* color: rgba(255, 255, 255, 0.9);  */
     font-size: 15px;
     font-weight: 200; 
     opacity: 0.9;
+     color: black;
 }
+
+.yt-footer {
+    padding: 11px 18px;
+    color: 606060;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 9px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #606060;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.copy {
+    font-size: 12px;
+    color: #606060;
+}
+
 /* body ends here */
 
 /* main content starts here */
@@ -277,34 +374,68 @@ img{
      width: calc(100vw - 240px);
 
 }
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: sticky; /* Keeps it pinned while scrolling page */
+    top: 56px; /* Adjust based on your header height */
+    z-index: 10;
+}
+
 .chips-wrapper{
     overflow-x: auto;
-    background-color: #181818;
+    /* background-color: black; */
+    background-color: white;
+    color: black;
     padding-left: 14px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     white-space: nowrap;
+    flex: 1; 
+    scroll-behavior: smooth;
+}
+
+.arrow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes it a circle */
+    cursor: pointer;
+    margin-right: 10px; /* Space from the right edge */
+    margin-left: 10px;
+}
+
+.arrow-icon:hover {
+    background-color: #e5e5e5; /* Hover effect like YouTube */
+}
+
+.arrow-icon i {
+    font-size: 24px;
+    color: black;
 }
 
 .chips-wrapper::-webkit-scrollbar{
     height: 0;
 }
 .chip{
-     margin: 12px 6px;
-    background-color: #373737;
+    margin: 12px 6px;
     padding: 6px 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
+    border: 1px solid rgba(224, 224, 224, 0.1);
+    border-radius: 5px;
     white-space: nowrap;
     cursor: pointer;
-    color: #fff;
+    background-color: #f8f8f8;
+    color: black;
     transition: 0.5s;
 }
 
-.chip:hover{
+/* .chip:hover{
     background-color: #4d4d4d;
-}
+} */
+
 /* main content end here */
 
 
@@ -314,7 +445,7 @@ img{
     grid-template-columns: repeat(4,1fr);
     grid-gap:18px;
     padding: 20px 25px;
-    background-color: #181818;
+    background-color: #ffffff;
     overflow-y: scroll;
     height: calc(100vh - 116px);
 }
