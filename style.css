@@ -217,12 +217,33 @@ img{
     align-items: center;
 }
 
-.profile-container i{
-    margin-left: 7%;
+.profile-container i{ 
+    color: black;
+}
+
+.notification-wrapper {
+    position: relative;
+    display: inline-block;
     cursor: pointer;
+    margin-left: 7%;
     margin-right: 7%;
 }
 
+.notification-badge {
+    position: absolute;
+    top: -6px;  
+    right: -10px; 
+    background-color: #cc0000; 
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 10px; 
+    border: 2px solid white; 
+    line-height: 1; 
+    min-width: 15px;
+    text-align: center;
+}
 
 .create-button{
     /* background-color: #373737;
@@ -264,6 +285,7 @@ img{
     height: calc(100vh - 60px);
 }
 
+
 .sidebar{
     /* background-color: black;
      color: white; */
@@ -271,7 +293,10 @@ img{
     color: black;
     padding-top: 10px;
     width: 240px;
-    overflow-y: scroll;
+    height: calc(100vh - 80px);
+    /* overflow-y: auto; */
+    overflow-y: overlay;
+    position: relative;
    
 }
 
@@ -306,6 +331,9 @@ img{
     color: black;
 }
 
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
 .more i{
    /* color: rgba(255, 255, 255, 0.9);  */
     font-size: 15px;
@@ -346,14 +374,47 @@ img{
      width: calc(100vw - 240px);
 
 }
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: sticky; /* Keeps it pinned while scrolling page */
+    top: 56px; /* Adjust based on your header height */
+    z-index: 10;
+}
+
 .chips-wrapper{
     overflow-x: auto;
     /* background-color: black; */
-     background-color: white;
-      color: black;
+    background-color: white;
+    color: black;
     padding-left: 14px;
     display: flex;
     white-space: nowrap;
+    flex: 1; 
+    scroll-behavior: smooth;
+}
+
+.arrow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes it a circle */
+    cursor: pointer;
+    margin-right: 10px; /* Space from the right edge */
+    margin-left: 10px;
+}
+
+.arrow-icon:hover {
+    background-color: #e5e5e5; /* Hover effect like YouTube */
+}
+
+.arrow-icon i {
+    font-size: 24px;
+    color: black;
 }
 
 .chips-wrapper::-webkit-scrollbar{
