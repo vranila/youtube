@@ -440,17 +440,146 @@ img{
 
 
 /* video content starts here */
-.video-container{
+
+.video-container {
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap:18px;
-    padding: 20px 25px;
-    background-color: #ffffff;
-    overflow-y: scroll;
-    height: calc(100vh - 116px);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 28px 22px;
+    margin-top: 10px;
 }
 
-.channel-logo{
-
+.video-card {
+    cursor: pointer;
 }
+
+.thumbnail-box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    border-radius: 14px;
+    overflow: hidden;
+    background: #e5e5e5;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-top: 0%;
+}
+
+.hover-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.thumbnail-box:hover .hover-video {
+    opacity: 1;
+}
+
+/* .cc-btn,.sound-btn {
+    position: absolute;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+} */
+
+.duration {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.82);
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+
+.video-info {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 12px;
+    position: relative;
+}
+
+.channel-dp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-top: 2%;
+}
+
+.meta {
+    margin-left: 55px;
+    line-height: 1rem;
+    flex: 1;
+}
+
+
+.title {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.45rem;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.channel-name {
+    font-size: 0.85rem;
+    color: #606060;
+    text-decoration: none;
+}
+
+.channel-name:hover {
+    color: black;
+}
+
+.channel-name i{
+    padding-left: 5px;
+    font-size: 0.85rem;
+}
+
+.stats {
+    font-size: 0.82rem;
+    color: #606060;
+    margin-top: 1px;
+}
+
+
+.more-icon {
+    font-size: 20px;
+    color: #606060;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: 0.2s;
+}
+
+.more-icon:hover {
+    color: black;
+}
+
 /* video content ends here */
+
+
