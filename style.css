@@ -11,26 +11,6 @@ html, body {
     overflow-x: hidden;
 }
 
-
-/* Scrollabar */
-::-webkit-scrollbar{
-    width: 6px;
-}
-
-::-webkit-scrollbar-track{
-    background: none;
-}
-
-::-webkit-scrollbar-thumb{
-     background: #575757;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-      background: #757575;    
-}
-
-
 h1{
     font-size:1.5rem;
 }
@@ -90,7 +70,7 @@ hr{
 }
 
 img{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     height: 100%;
@@ -291,6 +271,15 @@ img{
    
 }
 
+
+.sidebarsub-icon{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+
 .sidebar a{
      color: black;
      text-decoration: none;
@@ -360,11 +349,46 @@ img{
     color: white;
     padding-top: 4px;
 }
+
+
 .more i{
     font-size: 15px;
     font-weight: 200; 
     opacity: 0.9;
      color: black;
+}
+
+
+.more {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px 0 10px 20px;
+    color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sidebar-sub-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #0f0f0f;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.sidebar-sub-item:hover {
+    background: #f2f2f2;
+}
+
+.sidebarsub-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;     /* makes it circle like YouTube */
+    object-fit: cover;
 }
 
 .yt-footer {
@@ -410,6 +434,13 @@ img{
     padding-bottom: 10px;
 }
 
+
+.chips-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .chips-wrapper{
     overflow-x: auto;
     background-color: white;
@@ -418,7 +449,6 @@ img{
     white-space: nowrap;
     flex: 1; 
     scroll-behavior: smooth;
-    display: flex;
     gap: 8px;
     padding-left: 9px;
 }
@@ -464,6 +494,27 @@ img{
     background-color: #e5e5e5;
 }
 
+.arrow-overlay {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    height: 43px;
+    width: 43px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.arrow-overlay:hover , .arrow-overlay i:hover{
+    background-color: #e5e5e5;
+}
+
+
+.arrow-overlay i{
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+    font-size: 1.4rem;
+}
 /* main content end here */
 
 
@@ -546,8 +597,8 @@ img{
 }
 
 .meta {
-    margin-left: 55px;
-    line-height: 1rem;
+    margin-left: 18px;
+    line-height: 1.2rem;
     flex: 1;
 }
 
