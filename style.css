@@ -6,9 +6,10 @@
     font-family: "Roboto", Arial, sans-serif;
 }
 
-html, body {
-    height: 100%;
+html,body {
+    overflow-y: auto;
     overflow-x: hidden;
+    height: auto;
 }
 
 h1{
@@ -39,7 +40,7 @@ hr{
 
 /* Header starts here */
 .header{
-    position: fixed;
+    position: fixed; 
     top: 0;
     left: 0;
     width:100% ;
@@ -227,11 +228,13 @@ img{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 36px;
     cursor: pointer;
-    width: 110px;
-    height: 40px; 
+    width: 115px;
+    height: 40px;
     display: flex;
     flex-direction: row;
+    gap: 5px;
 }
+
 
 .create-button i{
     width: 23%;
@@ -264,13 +267,22 @@ img{
     top: 60px;
     left: 0;
     width: 240px;
+    min-width: 240px; 
     height: calc(100vh - 60px);
     background-color: #fff;
-    overflow-y: auto;
     padding-top: 10px; 
-   
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: content-box;
 }
 
+.sidebar:hover {
+    overflow-y: auto;    
+}
+
+.sidebar * {
+    flex-shrink: 0 !important;
+}
 
 .sidebarsub-icon{
     width: 40px;
@@ -311,44 +323,6 @@ img{
     color: black;
 }
 
-.sidebar::-webkit-scrollbar {
-    width: 6px;
-    background: transparent;
-}
-
-.sidebar::-webkit-scrollbar-track {
-    background: transparent;
-    position: relative;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
- background-color: #575757;
-    border-radius: 10px;
-    border: 3px solid transparent; 
-    background-clip: content-box;          
-}
-
-.sidebar::-webkit-scrollbar-thumb:hover {  
-    background: #757575;         
-}
-
-.sidebar::-webkit-scrollbar-thumb:before {
-    content: '▲';
-    display: block;
-    text-align: center;
-    font-size: 10px;
-    color: white;
-    padding-bottom: 4px;
-}
-
-.sidebar::-webkit-scrollbar-thumb:after {
-    content: '▼';
-    display: block;
-    text-align: center;
-    font-size: 10px;
-    color: white;
-    padding-top: 4px;
-}
 
 
 .more i{
@@ -422,13 +396,17 @@ img{
 .content{
     width: calc(100vw - 240px);
     margin-left: 240px;
+    overflow-y: auto; 
+    overflow-x: hidden;
 }
 
 .filter-bar {
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 60px;
+    /* position: sticky;
+    top: 10px; */
+    position: fixed;
+    top: 53px;
     background-color: white;
     z-index: 900;
     padding-bottom: 10px;
@@ -448,9 +426,10 @@ img{
     display: flex;
     white-space: nowrap;
     flex: 1; 
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     gap: 8px;
     padding-left: 9px;
+    margin-top: 10px;
 }
 
 .arrow-icon {
@@ -462,11 +441,13 @@ img{
     border-radius: 50%;
     cursor: pointer;
     margin-right: 10px; 
+    margin-top: 10px;
 
 }
 
 .arrow-icon:hover {
     background-color: #e5e5e5; 
+    margin-top: 10px;
 }
 
 .arrow-icon i {
@@ -474,9 +455,9 @@ img{
     color: black;
 }
 
-.chips-wrapper::-webkit-scrollbar{
+/* .chips-wrapper::-webkit-scrollbar{
     height: 0;
-}
+} */
 .chip{
     /* margin: 12px 6px; */
     border: 1px solid rgba(224, 224, 224, 0.1);
@@ -497,7 +478,7 @@ img{
 .arrow-overlay {
     position: absolute;
     right: -1px;
-    top: -1px;
+    margin-top: 10px;
     height: 43px;
     width: 43px;
     border-radius: 100%;
@@ -521,13 +502,13 @@ img{
 /* video content starts here */
 
 .video-container {
-    padding: 20px;
+    padding-top: 55px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 28px 22px;
     overflow-y: auto; 
     margin-right: 8px;
-    
+    margin-left: 20px;
 }
 
 .video-card {
@@ -653,5 +634,4 @@ img{
 
 
 /* video content ends here */
-
 
