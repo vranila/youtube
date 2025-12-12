@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="img/youtube.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link href="fonts.googleapis.com" rel="stylesheet">
+
 </head>
 <body>
+    <!-- header -->
     <div class="header">
+        <!-- logo -->
         <div class="logo-container">
             <div class="menu">
                  <i class="ri-menu-line"></i>
@@ -24,6 +26,8 @@
                 <span class="country">IN</span>
             </div>
         </div>
+
+        <!-- search -->
         <div class="search-container">
             <div class="search-container-searchicon">
                 <form actions="">
@@ -33,6 +37,8 @@
             </div>
             <button class="mic"><i class="ri-mic-line"></i></button>
         </div>
+
+        <!-- profile -->
         <div class="profile-container">
                 <div class="create-button">
                     <i class="ri-add-large-fill"></i>
@@ -48,31 +54,34 @@
         </div>
     </div>
     <div class="body-container">
+        <!-- sidebar all items -->
         <div class="sidebar">
                 <div class="sidebar-items">
-                    <a href="" class="sidebar-item"><i class="ri-home-5-line"></i> Home</a>
+                    <a href="" class="sidebar-item"><i class="ri-home-4-fill"></i> Home</a>
                     <a href="" class="sidebar-item"><i class="ri-wireless-charging-line"></i>Shorts </a>
                     <!-- <a href="" class="sidebar-item"><i class="ri-video-line"></i>Subscription </a> -->
                     <hr>
                     <h4 class="more">Subscriptions <i class="ri-arrow-right-s-line"></i></h4>
                     <a href="#" class="sidebar-sub-item">
-                        <img src="img/sidebar1.jpg" class="sidebarsub-icon" alt="">
-                        <span>24 News</span>
+                        <img src="img/sidebar1.jpg" class="sidebarsub-icon" alt="24 News">
+                        <span>24 News</span> 
+                        <span><img src="img/live-streaming.png" class="sidebarsub-icon" alt="24 News" style="margin-left: 50px;"></span>
                          
                     </a>
                     <a href="#" class="sidebar-sub-item">
-                        <img src="img/sidebar1.jpg" class="sidebarsub-icon" alt="">
-                        <span>24 News</span>
+                        <img src="img/sidebar2.jpg" class="sidebarsub-icon" alt="TED Talks">
+                        <span>TED Talks</span>
+                        <span><img src="img/live-streaming.png" class="sidebarsub-icon" alt="TED Talks" style="margin-left: 43px;"></span>
                          
                     </a>
                     <a href="#" class="sidebar-sub-item">
-                        <img src="img/sidebar1.jpg" class="sidebarsub-icon" alt="">
-                        <span>24 News</span>
-                         
+                        <img src="img/sidebar3.jpg" class="sidebarsub-icon" alt="The Indian Express">
+                        <span>The Indian Express</span>
                     </a>
+
                     <a href="#" class="sidebar-sub-item">
-                        <img src="img/sidebar1.jpg" class="sidebarsub-icon" alt="">
-                        <span>24 News</span>
+                        <img src="img/sidebar4.jpg" class="sidebarsub-icon" alt="Programming with Mosh">
+                        <span>Programming with Mosh</span>
                          
                     </a>
                     <hr>
@@ -102,6 +111,7 @@
                     <a href="" class="sidebar-item"><i class="ri-feedback-line"></i>Send Feedback </a>
                     <hr>
                     <h4 class="more">Copyright</h4>
+                    <!-- sidebarfooter -->
                     <footer class="yt-footer">
                         <div class="footer-links">
                             <a href="#">About</a>
@@ -123,6 +133,7 @@
                     </footer>
                 </div>
         </div>
+
         <div class="content">
             <div class="filter-bar">
                 <div class="chips-container">   
@@ -201,7 +212,54 @@
                     </div>
                     <i class="ri-more-2-fill more-icon"></i>
                 </div>
-            </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <div class="thumbnail-box">
+                        <img src="img/educhannels2_cover.jpg" class="thumbnail" alt="">
+                        <iframe class="hover-video"
+                            src="https://www.youtube.com/embed/RVFAyFWO4go?autoplay=1&mute=1&controls=0&loop=1&playlist=RVFAyFWO4go"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media">
+                        </iframe>
+                        <span class="duration">8:49:05</span>
+                    </div>
+
+                <div class="video-info">
+                    <img src="img/educhannels2_profile.jpg" class="channel-dp">
+                    <div class="meta">
+                        <p class="title">React JS Full Course for Beginners | Complete All-in-One Tutorial | 9 Hours</p>
+                        <a class="channel-name" href="https://www.youtube.com/@DaveGrayTeachesCode">Dave Gray</a>
+                        <p class="stats">1.1M views  &middot; 4 years ago</p>
+                    </div>
+                    <i class="ri-more-2-fill more-icon"></i>
+                </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <div class="thumbnail-box">
+                        <img src="img/educhannels3_cover.jpg" class="thumbnail" alt="">
+                        <iframe class="hover-video"
+                            src="https://www.youtube.com/embed/-G-zic_LS0A?autoplay=1&mute=1&controls=0&loop=1&playlist=-G-zic_LS0A"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media">
+                        </iframe>
+
+                        <span class="duration">11:37:45</span>
+                    </div>
+
+                <div class="video-info">
+                    <img src="img/educhannels3_profile.jpg" class="channel-dp">
+                    <div class="meta">
+                        <p class="title">CSS Full Course Tutorial for Beginners - Learn EVERYTHING You Need to Know in Detail 🔍</p>
+                        <a class="channel-name" href="https://www.youtube.com/@futurefullstack">Future Fullstack</a>
+                        <p class="stats">359K views  &middot; 11 months</p>
+                    </div>
+                    <i class="ri-more-2-fill more-icon"></i>
+                </div>
+                </div>
 
                  <!-- Video 10 -->
                 <div class="video-card">

@@ -6,9 +6,10 @@
     font-family: "Roboto", Arial, sans-serif;
 }
 
-html, body {
-    height: 100%;
+html,body {
+    overflow-y: auto;
     overflow-x: hidden;
+    height: auto;
 }
 
 h1{
@@ -39,7 +40,7 @@ hr{
 
 /* Header starts here */
 .header{
-    position: fixed;
+    position: fixed; 
     top: 0;
     left: 0;
     width:100% ;
@@ -422,13 +423,17 @@ img{
 .content{
     width: calc(100vw - 240px);
     margin-left: 240px;
+    overflow-y: auto; /* scrollbar here */
+    overflow-x: hidden;
 }
 
 .filter-bar {
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 60px;
+    /* position: sticky;
+    top: 10px; */
+    position: fixed;
+    top: 53px;
     background-color: white;
     z-index: 900;
     padding-bottom: 10px;
@@ -521,7 +526,7 @@ img{
 /* video content starts here */
 
 .video-container {
-    padding: 20px;
+    padding-top: 55px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 28px 22px;
@@ -653,5 +658,4 @@ img{
 
 
 /* video content ends here */
-
 
